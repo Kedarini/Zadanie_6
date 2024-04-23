@@ -12,5 +12,21 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Witaj w pliku tablice!");
         }
+        public int[] Stworz_Tablice()
+        {
+            Console.WriteLine();
+            Console.WriteLine("===============Tworzenie Tablicy===============");
+            Console.Write("Podaj ilość elementów tablicy: ");
+            int dlugosc = int.Parse(Console.ReadLine());
+            int[] tab = new int[dlugosc];
+
+            for(int i = 0; i < tab.Length; i++)
+            {
+                Console.Write($"Podaj {i+1} element tablicy: ");
+                tab[i] = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine();
+            return tab;
+        }
     }
 }
