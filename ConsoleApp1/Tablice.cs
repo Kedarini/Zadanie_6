@@ -30,10 +30,26 @@ namespace ConsoleApp1
         }
         public void Wyswietl_Tablice(int[] tab)
         {
-            Console.WriteLine("===============Oto Twoja Tablica===============");
             foreach (int i in tab)
             {
                 Console.Write(i+", ");
+            }
+            Console.WriteLine();
+        }
+        public void Sortowanie(int[] tab)
+        {
+            Console.WriteLine();
+            for (int i = 0;i < tab.Length;i++)
+            {
+                for(int j = 1;j < tab.Length - i; j++)
+                {
+                    if (tab[j-1] > tab[j])
+                    {
+                        int temp = tab[j - 1];
+                        tab[j-1] = tab[j];
+                        tab[j] = temp;
+                    }
+                }
             }
             Console.WriteLine();
         }
