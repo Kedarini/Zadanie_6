@@ -13,5 +13,6 @@ class Program
         tablice.Sortowanie(tab);
         Console.WriteLine("==========Oto Twoja Tablica Po Sortowaniu==========");
         tablice.Wyswietl_Tablice(tab);
+        tablice.Przeszukiwanie(5, tab);
     }
 }

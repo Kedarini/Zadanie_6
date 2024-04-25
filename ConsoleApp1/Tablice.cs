@@ -53,5 +53,20 @@ namespace ConsoleApp1
             }
             Console.WriteLine();
         }
+        public bool Przeszukiwanie(int k, int[] tab)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("================Przeszukiwanie===============");
+            for(int i = 0; i < tab.Length; i++)
+            {
+                if(k == tab[i])
+                {
+                    Console.WriteLine("Znaleziono twoją liczbę w tablicy");
+                    return true;
+                }
+            }
+            Console.WriteLine("Elementu nie było w tablicy");
+            return false;
+        }
     }
 }
